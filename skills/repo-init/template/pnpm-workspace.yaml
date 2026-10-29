@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  "@types/node": ^24
+  typescript: ^5
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
