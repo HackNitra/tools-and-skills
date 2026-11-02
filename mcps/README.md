@@ -11,4 +11,6 @@ Also connected through claude.ai connectors: Gmail, Google Calendar, Google Driv
 Plugin-provided: Neon (`neon-postgres@neon`), Discord (`discord@claude-plugins-official`).
 Browser: Claude in Chrome extension.
 
+Optional browser CLI: [agent-browser setup](../skills/README.md#agent-browser). The catalog documents its CLI and skill installation separately from the hosted MCP servers above.
+
 Auth is handled by OAuth on first use, so no tokens or client IDs belong in this repo.
