@@ -1,0 +1,25 @@
+name: validate
+
+on:
+  push:
+    branches: [majster, main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate skills, commands, agents and manifests
+        run: node scripts/validate.mjs
+      - name: Scan for committed secrets
+        run: |
+          if grep -rEn --exclude-dir=.git --exclude-dir=node_modules \
+            -e 'AKIA[0-9A-Z]{16}' -e 'sk-ant-[A-Za-z0-9_-]{20,}' -e 'gh[pousr]_[A-Za-z0-9]{36,}' \
+            -e '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----' \
+            --exclude=secret-guard.mjs --exclude=validate.yml .; then
+            echo "Possible secret found"; exit 1
+          fi

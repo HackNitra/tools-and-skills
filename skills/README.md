@@ -8,6 +8,14 @@ Our own skills live here. Third-party collections are linked to their maintainer
 |---|---|
 | [repo-init](repo-init/SKILL.md) | Scaffold our TypeScript monorepo: Next.js, Tailwind, Turborepo, pnpm, Kysely/Postgres, and CI. |
 | [feature-spec](feature-spec/SKILL.md) | Interview for a significant feature and write a `FEATURE_SPEC.draft.md` for human review. |
+| [hackathon-kickoff](hackathon-kickoff/SKILL.md) | Turn a team and a theme into a pitch, MVP scope, task split and timeline. |
+| [scope-mvp](scope-mvp/SKILL.md) | Cut an oversized idea down to what wins the demo. |
+| [claude-code-primer](claude-code-primer/SKILL.md) | Habits for working effectively with Claude Code in a team. |
+| [debug-fast](debug-fast/SKILL.md) | A time-boxed debugging loop with common hackathon culprits. |
+| [ship-it](ship-it/SKILL.md) | Pick a host, wire env vars and get a public URL. |
+| [demo-day-prep](demo-day-prep/SKILL.md) | Feature freeze, clean-state test, backups and submission package. |
+| [judge-readme](judge-readme/SKILL.md) | A README judges understand in 60 seconds. |
+| [pitch-coach](pitch-coach/SKILL.md) | 3-minute pitch, demo run-sheet and judge Q&A. |
 
 For Claude Code, copy the complete skill folder into `~/.claude/skills/`, including its templates, scripts, and references.
 
