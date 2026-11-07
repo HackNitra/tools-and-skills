@@ -1,0 +1,10 @@
+{
+  "name": "hacknitra-toolkit",
+  "version": "1.0.0",
+  "description": "Skills, slash commands, subagents and hooks for building a hackathon project fast with Claude Code: kickoff, MVP scoping, debugging, shipping, README and pitch.",
+  "author": { "name": "HackNitra", "url": "https://github.com/HackNitra" },
+  "homepage": "https://github.com/HackNitra/tools-and-skills",
+  "repository": "https://github.com/HackNitra/tools-and-skills",
+  "license": "MIT",
+  "keywords": ["hackathon", "skills", "claude-code", "workflow", "pitch", "mvp"]
+}

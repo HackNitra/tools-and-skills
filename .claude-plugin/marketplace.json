@@ -1,0 +1,11 @@
+{
+  "name": "hacknitra",
+  "owner": { "name": "HackNitra", "url": "https://github.com/HackNitra" },
+  "plugins": [
+    {
+      "name": "hacknitra-toolkit",
+      "source": "./",
+      "description": "Hackathon workflow toolkit: kickoff, MVP scoping, debugging, shipping, README and pitch."
+    }
+  ]
+}
