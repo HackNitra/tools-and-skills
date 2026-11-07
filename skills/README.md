@@ -13,6 +13,7 @@ Our own skills live here. Third-party collections are linked to their maintainer
 | [claude-code-primer](claude-code-primer/SKILL.md) | Habits for working effectively with Claude Code in a team. |
 | [debug-fast](debug-fast/SKILL.md) | A time-boxed debugging loop with common hackathon culprits. |
 | [ship-it](ship-it/SKILL.md) | Pick a host, wire env vars and get a public URL. |
+| [soc2-audit](soc2-audit/SKILL.md) | SOC 2 readiness audit of your app with evidence and a fix list. |
 | [demo-day-prep](demo-day-prep/SKILL.md) | Feature freeze, clean-state test, backups and submission package. |
 | [judge-readme](judge-readme/SKILL.md) | A README judges understand in 60 seconds. |
 | [pitch-coach](pitch-coach/SKILL.md) | 3-minute pitch, demo run-sheet and judge Q&A. |

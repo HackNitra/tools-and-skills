@@ -25,6 +25,7 @@ Potom napíš `/hackathon-kickoff`. Celý postup: [docs/getting-started.md](docs
 | `claude-code-primer` | Si v Claude Code nový |
 | `debug-fast` | Niečo nefunguje a čas beží |
 | `ship-it` | Potrebuješ verejnú URL |
+| `soc2-audit` | Potrebuješ SOC 2 audit / bezpečnostnú kontrolu appky |
 | `demo-day-prep` | Posledné 2-3 hodiny: zmrazenie funkcií, overenie, odovzdanie |
 | `judge-readme` | Potrebuješ README, ktoré porotcovia pochopia za 60 sekúnd |
 | `pitch-coach` | Potrebuješ 3-minútový pitch, demo scenár a otázky poroty |
