@@ -59,6 +59,16 @@ Tieto sú od iných autorov, preto sú len odkazy, nie kópie.
 - Neon skilly (`neon`, `neon-auth`, `neon-postgres`, `neon-functions`, `neon-realtime`, `neon-object-storage`, `neon-ai-gateway`, `neon-postgres-branches`, `neon-postgres-egress-optimizer`) cez plugin `neon-postgres@neon`
 - `building-components`, `find-skills`, `turborepo`, `web-design-guidelines` cez `npx skills add` alebo register skills.sh
 
+## Katalóg skillov od tretích strán
+
+V [katalógu skillov](skills/README.md) nájdeš Superpowers, skilly Matta Pococka, Vercel agent-skills, Impeccable, skilly od Anthropicu a agent-browser: na čo je každý, ako sa inštaluje a kde sa prekrývajú.
+
+Sú to možnosti na výber, nie balík „nainštaluj všetko“. Súbory skillov tretích strán zostávajú u autorov; `skills/` obsahuje naše vlastné skilly a katalóg.
+
+## Build Day
+
+Skill na prípravu 1-minútovej prezentácie (3 slidy) pre Build Day: [build-day/presentation-skill.md](build-day/presentation-skill.md).
+
 ## MCP servery a pluginy
 Pozri [`mcps/`](mcps/README.md) a [`plugins/`](plugins/README.md), oboje odporúčané tímom HackNitra.
 

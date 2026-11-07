@@ -11,4 +11,6 @@ Cez konektory claude.ai sú tiež dostupné: Gmail, Google Calendar, Google Driv
 Cez pluginy: Neon (`neon-postgres@neon`), Discord (`discord@claude-plugins-official`).
 Prehliadač: rozšírenie Claude in Chrome.
 
+Voliteľné CLI na ovládanie prehliadača: [agent-browser](../skills/README.md#agent-browser). Katalóg popisuje jeho inštaláciu samostatne od hostovaných MCP serverov vyššie.
+
 Prihlásenie rieši OAuth pri prvom použití, takže v tomto repozitári nepatria žiadne tokeny ani client ID.
