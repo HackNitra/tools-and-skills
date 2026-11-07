@@ -54,7 +54,7 @@ Detaily po fázach: [docs/workflow.md](docs/workflow.md).
 
 ## Skilly a nástroje, ktoré odporúča tím HackNitra
 
-Tieto sú od iných autorov, preto ssú len odkazy, nie kópie.
+Tieto sú od iných autorov, preto sú len odkazy, nie kópie.
 
 - Neon skilly (`neon`, `neon-auth`, `neon-postgres`, `neon-functions`, `neon-realtime`, `neon-object-storage`, `neon-ai-gateway`, `neon-postgres-branches`, `neon-postgres-egress-optimizer`) cez plugin `neon-postgres@neon`
 - `building-components`, `find-skills`, `turborepo`, `web-design-guidelines` cez `npx skills add` alebo register skills.sh
