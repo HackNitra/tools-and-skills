@@ -1,6 +1,6 @@
 # Plugins
 
-Enabled or installed via `/plugin`:
+Pluginy, ktoré odporúča tím HackNitra (inštalácia cez `/plugin`):
 
 | Plugin | Marketplace |
 |---|---|

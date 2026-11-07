@@ -1,70 +1,72 @@
-# HackNitra tools and skills
+# HackNitra: nástroje a skilly
 
 [![validate](https://github.com/HackNitra/tools-and-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/HackNitra/tools-and-skills/actions/workflows/validate.yml)
-[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![licencia: MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 
-A toolkit for building a hackathon project fast with [Claude Code](https://docs.claude.com/en/docs/claude-code/overview): skills, slash commands, subagents and a safety hook, packaged as one plugin. Made for HackNitra attendees; use it at any hackathon.
+Sada nástrojov na rýchle budovanie hackathonového projektu s [Claude Code](https://docs.claude.com/en/docs/claude-code/overview): skilly, slash príkazy, subagenti a bezpečnostný hook v jednom plugine. Pripravil tím HackNitra pre účastníkov, použiť ju môžeš na akomkoľvek hackathone.
 
-## Quick start
+## Rýchly štart
 
 ```
 /plugin marketplace add HackNitra/tools-and-skills
 /plugin install hacknitra-toolkit@hacknitra
 ```
 
-Then type `/hackathon-kickoff`. Full walkthrough: [docs/getting-started.md](docs/getting-started.md).
+Potom napíš `/hackathon-kickoff`. Celý postup: [docs/getting-started.md](docs/getting-started.md).
 
-## What is inside
+## Čo je vnútri
 
-### Skills (`skills/`)
+### Skilly (`skills/`)
 
-| Skill | Use it when |
+| Skill | Kedy ho použiť |
 |---|---|
-| `hackathon-kickoff` | You have a team and a theme and need a plan, now |
-| `scope-mvp` | The idea is too big for the time left |
-| `claude-code-primer` | You are new to Claude Code |
-| `debug-fast` | Something is broken and the clock is ticking |
-| `ship-it` | You need a public URL |
-| `demo-day-prep` | The last 2-3 hours: freeze, verify, package |
-| `judge-readme` | You need a README judges understand in 60 seconds |
-| `pitch-coach` | You need a 3-minute pitch, demo script and judge Q&A |
-| `repo-init` | You want a TypeScript monorepo (Turborepo, Next.js, Kysely, CI) |
-| `feature-spec` | A big feature needs an interview-driven spec |
+| `hackathon-kickoff` | Máš tím a tému a potrebuješ plán hneď |
+| `scope-mvp` | Nápad je väčší, než stihneš |
+| `claude-code-primer` | Si v Claude Code nový |
+| `debug-fast` | Niečo nefunguje a čas beží |
+| `ship-it` | Potrebuješ verejnú URL |
+| `demo-day-prep` | Posledné 2-3 hodiny: zmrazenie funkcií, overenie, odovzdanie |
+| `judge-readme` | Potrebuješ README, ktoré porotcovia pochopia za 60 sekúnd |
+| `pitch-coach` | Potrebuješ 3-minútový pitch, demo scenár a otázky poroty |
+| `repo-init` | Chceš TypeScript monorepo (Turborepo, Next.js, Kysely, CI) |
+| `feature-spec` | Veľká funkcia potrebuje špecifikáciu cez rozhovor |
 
-### Slash commands (`commands/`)
-`/standup`, `/cut-scope <hours>`, `/prep-demo`, `/write-readme`, `/explain-codebase`
+### Slash príkazy (`commands/`)
+`/standup`, `/cut-scope <hodiny>`, `/prep-demo`, `/write-readme`, `/explain-codebase`
 
-### Subagents (`agents/`)
-`code-reviewer` (read-only, demo-breaking bugs first), `demo-tester` (walks the flow like a judge), `pitch-critic` (tough but fair judge)
+### Subagenti (`agents/`)
+`code-reviewer` (iba na čítanie, najprv chyby, ktoré zničia demo), `demo-tester` (prejde demo ako porotca), `pitch-critic` (prísna, ale férová porota)
 
 ### Hook (`hooks/`)
-`secret-guard` blocks `git commit` and `git push` when staged changes contain API keys, tokens, private keys or database URLs with passwords.
+`secret-guard` zablokuje `git commit` a `git push`, ak staged zmeny obsahujú API kľúče, tokeny, privátne kľúče alebo databázové URL s heslom.
 
-### Templates (`templates/`)
-Starter `CLAUDE.md` and `PLAN.md` for your project.
+### Šablóny (`templates/`)
+Štartovacie `CLAUDE.md` a `PLAN.md` pre tvoj projekt.
 
-## The workflow
+## Postup práce
 
 ```mermaid
 flowchart LR
   A[hackathon-kickoff] --> B[scope-mvp] --> C[build] --> E[ship-it] --> F[demo-day-prep] --> G[judge-readme] --> H[pitch-coach]
 ```
 
-Details per phase: [docs/workflow.md](docs/workflow.md).
+Detaily po fázach: [docs/workflow.md](docs/workflow.md).
 
-## Third-party skills I use (links, not copies)
+## Skilly a nástroje, ktoré odporúča tím HackNitra
 
-- Neon skills (`neon`, `neon-auth`, `neon-postgres`, `neon-functions`, `neon-realtime`, `neon-object-storage`, `neon-ai-gateway`, `neon-postgres-branches`, `neon-postgres-egress-optimizer`) via the `neon-postgres@neon` plugin
-- `building-components`, `find-skills`, `turborepo`, `web-design-guidelines` via `npx skills add` / the skills.sh registry
+Tieto sú od iných autorov, preto ssú len odkazy, nie kópie.
 
-## MCP servers and plugins
-See [`mcps/`](mcps/README.md) and [`plugins/`](plugins/README.md).
+- Neon skilly (`neon`, `neon-auth`, `neon-postgres`, `neon-functions`, `neon-realtime`, `neon-object-storage`, `neon-ai-gateway`, `neon-postgres-branches`, `neon-postgres-egress-optimizer`) cez plugin `neon-postgres@neon`
+- `building-components`, `find-skills`, `turborepo`, `web-design-guidelines` cez `npx skills add` alebo register skills.sh
 
-Running a Discord server for your event? See [hacknitra_discord_manager](https://github.com/HackNitra/hacknitra_discord_manager).
+## MCP servery a pluginy
+Pozri [`mcps/`](mcps/README.md) a [`plugins/`](plugins/README.md), oboje odporúčané tímom HackNitra.
 
-## Contributing
+Spravuješ Discord server pre svoj event? Pozri [hacknitra_discord_manager](https://github.com/HackNitra/hacknitra_discord_manager).
 
-PRs welcome, small and tested. See [CONTRIBUTING.md](CONTRIBUTING.md). Run `node scripts/validate.mjs` before opening one.
+## Prispievanie
 
-## License
+PR sú vítané, malé a vyskúšané. Pozri [CONTRIBUTING.md](CONTRIBUTING.md) a pred otvorením PR spusti `node scripts/validate.mjs`.
+
+## Licencia
 [MIT](LICENSE)
